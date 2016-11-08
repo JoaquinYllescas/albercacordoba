@@ -24,7 +24,6 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<div class="site-inner">
-		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
 
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-header-main">
@@ -39,7 +38,7 @@
 
 					$description = get_bloginfo( 'description', 'display' );
 					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; ?></p>
+						<!-- <p class="site-description"><?php echo $description; ?></p> -->
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 

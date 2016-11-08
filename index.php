@@ -17,37 +17,13 @@
 get_header(); ?>
 
 	
+<div class="wrapper">
+	<?php
+	get_template_part( "template-intro");
+	/* get_sidebar(); */ 
+	?>
+</div>
 
 
 
-
-<?php	
-$fields = get_fields();
-// var_dump( $fields ); 
-
-
-
-if( $fields )
-{
-	foreach( $fields as $field_name => $value )
-	{
-		// get_field_object( $field_name, $post_id, $options )
-		// - $value has already been loaded for us, no point to load it again in the get_field_object function
-		$field = get_field_object($field_name, false, array('load_value' => false));
-
-		echo '<div>';
-			echo '<h3>' . $field_name . '</h3>';
-			echo $value;
-		echo '</div>';
-	}
-}
-
-?>
-
-
-
-
-
-
-<?php /* get_sidebar(); */ ?>
 <?php get_footer(); ?>
