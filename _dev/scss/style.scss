@@ -66,6 +66,58 @@ html, body, #page, .site-inner, .site-content, .wrapper, .intro{
 	height: 100%;
 	background-position: center;
 	background-size: cover;
+	font-family: 'Amaranth', sans-serif;
+}
+
+.intro{
+	.intro_container{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		h1{
+			font-weight: 700;
+			color: #ffffff;
+			font-size: 40px;
+			text-align: center;
+			text-shadow: 2px 1px #000000;
+		}
+		p{
+			font-size: 20px;
+			font-weight: 700;
+			color: #ffffff;
+			text-align: center;
+			text-shadow: 2px 1px #000000;
+			margin-top: 20px;
+		}
+		.enter{
+			margin-top: 20px;
+			text-align: center;
+			img{
+				display: inline-block;
+				cursor: pointer;
+			}
+		}
+	}
+	.llamar, .mapa{
+		display: block;
+		background-color: rgba(0,0,0,.7);
+		text-decoration: none;
+		color: #ffffff;
+		position: absolute;
+		bottom: 20px;
+		width: 90px;
+		height: 55px;
+		text-align: center;
+		line-height: 55px;
+	}
+	.llamar{
+		left: 0px;
+	}
+	.mapa{
+		right: 0px;
+	}
 }
 /*END Home*/
 

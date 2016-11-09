@@ -61,6 +61,50 @@ table {
 html, body, #page, .site-inner, .site-content, .wrapper, .intro {
   height: 100%;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  font-family: 'Amaranth', sans-serif; }
+
+.intro .intro_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .intro .intro_container h1 {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 1px #000000; }
+  .intro .intro_container p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 1px #000000;
+    margin-top: 20px; }
+  .intro .intro_container .enter {
+    margin-top: 20px;
+    text-align: center; }
+    .intro .intro_container .enter img {
+      display: inline-block;
+      cursor: pointer; }
+
+.intro .llamar, .intro .mapa {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  color: #ffffff;
+  position: absolute;
+  bottom: 20px;
+  width: 90px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px; }
+
+.intro .llamar {
+  left: 0px; }
+
+.intro .mapa {
+  right: 0px; }
 
 /*END Home*/
