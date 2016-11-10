@@ -8,7 +8,7 @@
 	get_header(); 
 ?>
 
-<div style="position:absolute; ">
+<div style="position:absolute; color:#ffffff;">
 		<?php
 			$fields = get_fields();
 			print_r($fields);
