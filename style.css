@@ -129,6 +129,15 @@ html, body, #page, .site-inner, .site-content, .wrapper, .intro {
   background-size: cover;
   transition: 1s opacity; }
 
+.black {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  -webkit-transition: all .5s;
+  /* Safari */
+  transition: all .5s; }
+
 @media screen and (min-width: 1025px) {
   .video {
     display: block; } }

@@ -17,6 +17,8 @@
 	
 <div class="wrapper">
 
+	<div class="black"></div>
+
 	
 	<div class="intro" style="background-image:url(<?php echo $fields['image_bg']; ?>);">
 		<div class="intro_container">
@@ -47,6 +49,7 @@
 		echo "NOOO";
 	}
 ?>
+
 
 
 

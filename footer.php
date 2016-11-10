@@ -55,5 +55,8 @@
 </div><!-- .site -->
 
 <?php wp_footer(); ?>
+
+<script src="<?php echo get_theme_root_uri(); ?>/Alberca/js/javascript.js"></script>
+
 </body>
 </html>
