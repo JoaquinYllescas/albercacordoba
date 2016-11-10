@@ -37,6 +37,19 @@
 	</div>
 
 
+<?php
+	if($fields['video_bg']['url']){
+		$urlVideo = $fields['video_bg']['url'];
+?>
+		<div class='video'><video poster='<?php echo get_theme_root_uri(); ?>/Alberca/images/general/enter.png' id='bgvid' playsinline autoplay muted loop><source src='<?php echo($urlVideo); ?>' type='video/mp4'></video></div>
+<?php
+	}else{
+		echo "NOOO";
+	}
+?>
+
+
+
 </div>
 
 
