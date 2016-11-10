@@ -103,10 +103,31 @@ html, body, #page, .site-inner, .site-content, .wrapper, .intro {
   line-height: 55px; }
 
 .intro .llamar {
-  left: 0px; }
+  left: 0px;
+  -webkit-transition: all  ease-in-out 1s;
+  -moz-transition: all  ease-in-out 1s;
+  -o-transition: all  ease-in-out 1s;
+  transition: all  ease-in-out 1s; }
+  .intro .llamar.left {
+    left: -100%; }
 
 .intro .mapa {
-  right: 0px; }
+  right: 0px;
+  -webkit-transition: all  ease-in-out 1s;
+  -moz-transition: all  ease-in-out 1s;
+  -o-transition: all  ease-in-out 1s;
+  transition: all  ease-in-out 1s; }
+  .intro .mapa.right {
+    right: -100%; }
+
+.intro #introContainer {
+  -webkit-transition: all  ease-in-out 1s;
+  -moz-transition: all  ease-in-out 1s;
+  -o-transition: all  ease-in-out 1s;
+  transition: all  ease-in-out 1s; }
+
+.intro .veArriba {
+  top: -100%; }
 
 .video {
   position: absolute;
@@ -125,18 +146,23 @@ html, body, #page, .site-inner, .site-content, .wrapper, .intro {
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
-  background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
+  /*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;*/
   background-size: cover;
   transition: 1s opacity; }
 
-.black {
+#black {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: black;
-  -webkit-transition: all .5s;
-  /* Safari */
-  transition: all .5s; }
+  background-color: #0e0e0e;
+  z-index: 11;
+  -webkit-transition: all  ease-in-out 1s;
+  -moz-transition: all  ease-in-out 1s;
+  -o-transition: all  ease-in-out 1s;
+  transition: all  ease-in-out 1s; }
+  #black.animated.fadeIn {
+    display: block; }
 
 @media screen and (min-width: 1025px) {
   .video {

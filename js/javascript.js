@@ -1,1 +1,1 @@
-alert("Hello"),console.log("Kino");
+$(".enter").on("click",function(){$("#introContainer").addClass(" veArriba "),$("#black").css({display:"block","background-color":"#141414"}),$(".llamar").addClass(" left "),$(".mapa").addClass(" right ")});

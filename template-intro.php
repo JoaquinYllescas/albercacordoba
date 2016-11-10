@@ -17,11 +17,11 @@
 	
 <div class="wrapper">
 
-	<div class="black"></div>
+	<div id="black" class="animated "></div>
 
 	
 	<div class="intro" style="background-image:url(<?php echo $fields['image_bg']; ?>);">
-		<div class="intro_container">
+		<div id="introContainer" class="intro_container animated">
 			<h1>
 				<?php echo $fields['titulo']; ?>
 			</h1>
