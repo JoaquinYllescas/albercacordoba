@@ -23,12 +23,31 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> ng-app="alberca" ng-controller="InitialController">
 <div id="page" class="site">
 	<div class="site-inner">
 
 		<header id="masthead" class="site-header" role="banner">
-			
+
+				<nav class="menu">
+					<div class="containerHamb">
+						<div id="nav-icon2" class="hamburguer">
+							  <span></span>
+							  <span></span>
+							  <span></span>
+							  <span></span>
+							  <span></span>
+							  <span></span>
+						</div>
+					</div>
+
+					<h1>{{albercaDatos.titulo}}</h1>
+					<?php wp_nav_menu( array('menu' => 'nav', 'menu_class' => 'menu_principal') ) ?>
+
+					<h4 class="info telefono">Tlf: (+34) {{albercaDatos.telefono}}</h4>
+					<h4 class="info"><a href="/">www.albercacordoba.com</a></h4>
+					<p class="info">Todos los derechos reservados</p>
+				</nav>
 		</header><!-- .site-header -->
 
 		<div id="content" class="site-content">

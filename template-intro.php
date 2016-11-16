@@ -8,25 +8,34 @@
 	get_header(); 
 ?>
 
+
+
+
+
 <div style="position:absolute; color:#ffffff;">
+		<!--
 		<?php
 			$fields = get_fields();
 			print_r($fields);
 		?>
+	-->
 </div>
 	
+
 <div class="wrapper">
 
 	<div id="black" class="animated "></div>
 
 	
-	<div class="intro" style="background-image:url(<?php echo $fields['image_bg']; ?>);">
+	<section class="intro" style="background-image:url(<?php echo $fields['image_bg']; ?>);">
 		<div id="introContainer" class="intro_container animated">
 			<h1>
-				<?php echo $fields['titulo']; ?>
+				{{albercaDatos.titulo}}
+				<!-- <?php echo $fields['titulo']; ?> -->
 			</h1>
 			<p>
-				<?php echo $fields['subtitulo']; ?>
+				{{albercaDatos.subtitulo}}
+				<!-- <?php echo $fields['subtitulo']; ?> -->
 			</p>
 
 			<div class="enter">
@@ -34,9 +43,10 @@
 			</div>
 		</div>
 
-		<a href="tel://<?php echo $fields['telefono']; ?>" class="llamar">Llamanos</a>
+		<a href="tel://{{albercaDatos.telefono}}" class="llamar">Llamanos</a>
 		<a href="" class="mapa">Mapa</a>
-	</div>
+	</section>
+	
 
 
 <?php
@@ -53,8 +63,42 @@
 
 
 
+
+
+	
+
+
+	
+
+
+
+	
+	<section class="historia">
+		
+	</section>
+
+
+
+
+
+
+
+
+	<div class="kino">
+		{{albercaDatos}}
+	</div>
+
 </div>
 
+
+
+
+
+
+
+<script>
+	var datos = <?php echo  json_encode($fields) ?>;
+</script>
 
 
 <?php get_footer(); ?>
