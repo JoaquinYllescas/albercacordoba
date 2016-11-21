@@ -60,7 +60,7 @@ table {
 .menu {
   /*display: none;*/
   position: fixed;
-  z-index: 50;
+  z-index: 1000;
   background-color: #252525;
   width: 280px;
   height: 100%;
@@ -181,6 +181,13 @@ html, body, #page, .site-inner, .site-content, .wrapper, .intro {
   background-size: cover;
   font-family: 'Amaranth', sans-serif; }
 
+body {
+  overflow-x: hidden;
+  background-color: #ffffff; }
+
+.mainContainer {
+  height: 100%; }
+
 .intro .intro_container {
   position: absolute;
   top: 50%;
@@ -279,10 +286,71 @@ html, body, #page, .site-inner, .site-content, .wrapper, .intro {
   -o-transition: all  ease-in-out 1s;
   transition: all  ease-in-out 1s; }
   #black.animated.fadeIn {
-    display: block; }
+    display: none; }
 
 @media screen and (min-width: 1025px) {
   .video {
     display: block; } }
 
 /*END Home*/
+/*Historia*/
+.historia {
+  color: #ffffff;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  background-color: #ffffff;
+  color: #565656;
+  min-height: 100%; }
+  .historia h2 {
+    text-align: center;
+    font-size: 55px;
+    padding: 40px 20px 20px 20px;
+    font-weight: bold; }
+  .historia p {
+    padding: 20px 20px 40px 20px;
+    text-align: center;
+    position: relative;
+    line-height: 25px; }
+    .historia p:before {
+      display: block;
+      content: "";
+      width: 298px;
+      height: 11px;
+      background-image: url(images/general/separador.png);
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      margin-left: -150px; }
+    .historia p:after {
+      display: block;
+      content: "";
+      width: 298px;
+      height: 11px;
+      background-image: url(images/general/separador.png);
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      margin-left: -150px; }
+
+/*END Historia*/
+/*Habitaciones*/
+.habitaciones {
+  color: #ffffff;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  background-color: #ffffff;
+  color: #565656;
+  min-height: 100%; }
+  .habitaciones h2 {
+    text-align: center;
+    font-size: 55px;
+    padding: 40px 20px 20px 20px;
+    font-weight: bold; }
+
+/*END Habitaciones*/
+#wpadminbar {
+  display: none !important; }

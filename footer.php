@@ -24,6 +24,8 @@
 
 <script src="<?php echo get_theme_root_uri(); ?>/Alberca/js/angular/angular.min.js"></script>
 
+<script src="<?php echo get_theme_root_uri(); ?>/Alberca/js/angular/angular-route.min.js"></script>
+
 <script>
 	// var datos = <?php echo  json_encode($fields) ?>;
 </script>

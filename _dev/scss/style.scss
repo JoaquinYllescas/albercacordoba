@@ -27,7 +27,13 @@ html, body, #page, .site-inner, .site-content, .wrapper, .intro{
 	background-size: cover;
 	font-family: 'Amaranth', sans-serif;
 }
-
+body{
+	overflow-x: hidden;
+	background-color: $white;
+}
+.mainContainer{
+	height: 100%;
+}
 .intro{
 	.intro_container{
 		position: absolute;
@@ -132,7 +138,7 @@ html, body, #page, .site-inner, .site-content, .wrapper, .intro{
 	@include basic;
 
 	&.animated.fadeIn{
-		display: block;
+		display: none;
 	}
 }
 
@@ -151,10 +157,84 @@ html, body, #page, .site-inner, .site-content, .wrapper, .intro{
 
 
 
+/*Historia*/
+.historia{
+	color: $white;
+	position: absolute;
+	top: 0px;
+	z-index: -1;
+	width: 100%;
+	background-color: $white;
+	color: $grey-text;
+	min-height: 100%;
+
+	h2{
+		text-align: center;
+		font-size: 55px;
+		padding: 40px 20px 20px 20px;
+		font-weight: bold;
+	}
+	p{
+		padding: 20px 20px 40px 20px;
+		text-align: center;
+		position: relative;
+		line-height: 25px;
+		
+		&:before{
+			display:block;
+			content: "";
+			width: 298px;
+			height: 11px;
+			background-image: url(images/general/separador.png);
+			position: absolute;
+		    top: -10px;
+		    left: 50%;
+		    margin-left: -150px;
+		}
+		&:after{
+			display:block;
+			content: "";
+			width: 298px;
+			height: 11px;
+			background-image: url(images/general/separador.png);
+			position: absolute;
+		    bottom: 10px;
+		    left: 50%;
+		    margin-left: -150px;
+		}
+	}
+}
+/*END Historia*/
+
+
+
+/*Habitaciones*/
+.habitaciones{
+	color: $white;
+	position: absolute;
+	top: 0px;
+	z-index: -1;
+	width: 100%;
+	background-color: $white;
+	color: $grey-text;
+	min-height: 100%;
+	
+	h2{
+		text-align: center;
+		font-size: 55px;
+		padding: 40px 20px 20px 20px;
+		font-weight: bold;
+	}
+}
+/*END Habitaciones*/
 
 
 
 
+
+#wpadminbar{
+	display: none !important;
+}
 
 
 

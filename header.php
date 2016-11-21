@@ -45,7 +45,7 @@
 					<?php wp_nav_menu( array('menu' => 'nav', 'menu_class' => 'menu_principal') ) ?>
 
 					<h4 class="info telefono">Tlf: (+34) {{albercaDatos.telefono}}</h4>
-					<h4 class="info"><a href="/">www.albercacordoba.com</a></h4>
+					<h4 class="info"><a href="#/">www.albercacordoba.com</a></h4>
 					<p class="info">Todos los derechos reservados</p>
 				</nav>
 		</header><!-- .site-header -->
