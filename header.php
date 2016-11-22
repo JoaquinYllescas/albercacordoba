@@ -23,7 +23,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> ng-app="alberca" ng-controller="InitialController">
+<body <?php body_class(); ?> ng-app="alberca" ng-controller="InitialController" style="background-image:url({{albercaDatos.image_bg}});">
 <div id="page" class="site">
 	<div class="site-inner">
 

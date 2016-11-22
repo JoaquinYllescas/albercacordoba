@@ -21,15 +21,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "nav";
 
 /*Home*/
-html, body, #page, .site-inner, .site-content, .wrapper, .intro{
-	height: 100%;
+html, body{
 	background-position: center;
 	background-size: cover;
 	font-family: 'Amaranth', sans-serif;
+	overflow: auto;
+	min-height: 100%;
 }
 body{
 	overflow-x: hidden;
 	background-color: $white;
+	background-size: cover;
+	background-position: inherit;
+	background-repeat: no-repeat;
 }
 .mainContainer{
 	height: 100%;
@@ -218,23 +222,92 @@ body{
 	background-color: $white;
 	color: $grey-text;
 	min-height: 100%;
-	
+
 	h2{
 		text-align: center;
 		font-size: 55px;
 		padding: 40px 20px 20px 20px;
 		font-weight: bold;
 	}
+
+	.apartamentos{
+		max-width: 960px;
+		margin: 0px auto;
+		ul{
+			overflow: hidden;
+			padding-bottom: 40px;
+			li{
+				height: 100px;
+				margin-bottom: 10px;
+				cursor: pointer;
+
+				
+	
+				div{
+					height: 100px;
+					cursor: pointer;
+					background-color: $grey-text;
+					color: $white;
+
+					&:hover{
+						background-color:$white-hover;
+						p{
+							color: $grey-text;	
+						}
+						
+					}
+
+					p{
+						text-align: center;
+						line-height: 24px;
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						transform:translate(-50%, -50%);
+					}
+				}
+			}
+		}
+		
+		.aptDescripcion{
+			text-align: center;
+			padding: 30px 20px;
+			position: relative;
+
+			&:before{
+				display:block;
+				content: "";
+				width: 298px;
+				height: 11px;
+				background-image: url(images/general/separador.png);
+				position: absolute;
+			    top: -10px;
+			    left: 50%;
+			    margin-left: -150px;
+			}
+		}
+
+	}
+
+
 }
 /*END Habitaciones*/
 
 
 
+/*CONTACTO*/
+ #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+/*END CONTACTO*/
 
 
+/*
 #wpadminbar{
 	display: none !important;
-}
+}*/
 
 
 
