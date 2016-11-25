@@ -33,11 +33,8 @@
 
 
 
- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDCMDTjmkcW_rPCpMKxBK6zJlyVqE7s80&callback=initMap"
-    async defer></script>
-
-    
 <script src="<?php echo get_theme_root_uri(); ?>/Alberca/js/javascript.js"></script>
+
 
 
 

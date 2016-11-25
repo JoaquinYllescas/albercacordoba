@@ -22,7 +22,7 @@
 
 </div>
 
-<!-- <div class="back" style="background-image:url({{albercaDatos.image_bg}});"></div> -->
+
 
 <div class="wrapper">
 
