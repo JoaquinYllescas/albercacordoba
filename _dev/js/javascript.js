@@ -18,6 +18,10 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 		$(".menu").toggleClass('open');
 	});
+
+	$(".menu_principal li").on("click", function(){
+		$("nav.menu, .containerHamb .hamburguer").removeClass(" open ");
+	});
 });
 /*END Hamburguesa*/
 
@@ -68,11 +72,5 @@ myApp.controller('InitialController', ['$scope', function($scope) {
 
 
 /*MAPA*/
- var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
+
 /*MAPA*/

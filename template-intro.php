@@ -43,6 +43,9 @@
 
 
 
+	<?php 
+		include(get_template_directory() . '/template-habitacion.php');
+	?>
 
 
 
